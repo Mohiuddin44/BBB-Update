@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>BengalByte Booster || Do Business Forget Obstacle</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Scroll Cdn-->
+    <link rel="stylesheet" href="css/style.css">  <!--Css link-->
+    <link rel="stylesheet" href="css/slick.min.css"> <!--Css slick link-->
+    <link rel="stylesheet" href="css/easy.css"> <!--Css Easy link-->
+    <link rel="shortcut icon" href="./image/favicon-32x32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="site-wrapper">
+        <div class="header-index">
+            <!-- Header Section -->
+             <header>
+                <nav>
+                <div class="container navbar">
+                    <div class="container-nav flex">
+                        <!-- Site Logo -->
+                         <a href="/" class="navbar-logo"><img src="./image/logofull.png.png" style="width: 90px;" alt=""></a>
+                        <button onclick="openNav()" class="navbar-toggler">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                        <!-- Menues -->
+                         <ul class="navbar-nav flex">
+                            <li><a href="/" class="nav-link active">Home</a></li>
+                            <li><a href="/" class="nav-link">About</a></li>
+                            <li><a href="/" class="nav-link">Contact</a></li>
+                            <li class="dropdown"><a href="/" class="nav-link dropdown-toggle">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/" class="dropdown-item">Services</a></li>
+                                <li><a href="/" class="dropdown-item">Pricing Plan</a></li>
+                                <li><a href="/" class="dropdown-item">Portfolio</a></li>
+                                <li><a href="/" class="dropdown-item">Team</a></li>
+                                <li><a href="/" class="dropdown-item">testimonials</a></li>
+                                <li><a href="/" class="dropdown-item">FAQ</a></li>
+                                <li><a href="/" class="dropdown-item">Blog</a></li>
+                                <li><a href="/" class="dropdown-item">Comming Soon</a></li>
+                                <li><a href="/" class="dropdown-item">404</a></li>
+                            </ul></li>
+                         </ul>
+                    </div>
+                    <div class="nav-right flex">
+                        <p>Call Us: <span>+880 1615 546040</span></p>
+                        <!-- header Button -->
+                        <i onclick="open_search()" class="fa-solid fa-magnifying-glass"></i>
+                        <i onclick="open_right_side()" class="fa-solid fa-bars"></i>
+                    </div>
+            </nav>
+            <!-- Sidebar -->
+             <aside id="mySidepanel" class="sidepanel">
+                <div class="sidebar flex">
+                    <a href="">
+                        <img src="/image/logofull.png.png" style="width: 90px;" alt="logo"></a>
+                        <button onclick="closeNav()" type="button" class="closebtn btn_hover1">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                </div>
+                <div>
+                    <!-- side menues -->
+                     <ul>
+                        <li><a href="/" class="nav-link active">Home</a></li>
+                        <li><a href="/" class="nav-link">About</a></li>
+                        <li><a href="/" class="nav-link">Contact</a></li>
+                        <li class="pages"><a href="/">More</a></li>
+                        <li class="collapse-btn">
+                            <a href="" class="navlink plus-collapse" data-bs-toggle="collapse">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                            <div class="collapse" id="pages">
+                                <ul>
+                                    <li><a href="/" class="nav-link">Services</a></li>
+                                    <li><a href="/" class="nav-link">Pricing Plan</a></li>
+                                    <li><a href="/" class="nav-link">Portfolio</a></li>
+                                    <li><a href="/" class="nav-link">Team</a></li>
+                                    <li><a href="/" class="nav-link">testimonials</a></li>
+                                    <li><a href="/" class="nav-link">FAQ</a></li>
+                                    <li><a href="/" class="nav-link">Blog</a></li>
+                                    <li><a href="/" class="nav-link">Comming Soon</a></li>
+                                    <li><a href="/" class="nav-link">404</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                     </ul>
+                </div>
+             </aside>
+
+            <!-- Searchbar -->
+             <div id="search-bar">
+                <div onclick="close_search()" class="btn_hover1">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <form action="" method="search">
+                    <input type="search" required placeholder="search...">
+                    <button type="submit" class="btn_hover1">Search</button>
+                </form>
+             </div>
+
+
+             <!-- right Sidebar -->
+              <section class="header-right-sidebar" id="right_side">
+                <div class="flex flex-sb">
+                    <a href="/"><img src="./image/logofull.png.png" alt="right-side"></a>
+                    <button onclick="close_right_sade()" class="close_rightsidebar fa-solid fa-xmark "></button>
+                </div>
+                <p>Do Business Forgot Obstacle</p>
+                <a href="" class="btn_hover1">Discover More</a>
+                <hr>
+                <h4>Connected details</h4>
+                <ul class="flex">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="text-lowercase">Bengalbytebooster@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#">+880 1615 546040</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-regular fa-clock"></i></a>
+                        <a href="#">Office Hours: 8AM - 11 PM Friday - Weekend Day</a>
+                    </li>
+                </ul>
+                <span class="flex">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </span>
+              </section>
+             </header>
+             <!-- ====== End of 1.1. Header section ====== -->
+            <!-- ====== 1.2. hero section ====== -->
+             <section class="hero">
+                <div class="container">
+                    <div>
+                        <div class="hero-social-icon flex">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <hr>
+                        </div>
+                        <div class="center-data flex flex-col gap-1">
+                            <h1>DIGITAL SERVICES</h1>
+                            <h3>BUILDING YOUR EMPIRE DIGITALLY</h3>
+                            <div class="center-btn flex">
+                                <a href="services.html" class="btn_hover1">Get Started</a>
+                                <a href="about.html" class="btn_hover2">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+             <!-- ====== End of 1.2. hero section ====== -->
+            </div>
+             <!-- ====== 1.3. card section ====== -->
+            <section class="feature">
+                <div class="container">
+                    <div class="flex">
+                        <div class="header-card">
+                            <div>
+                                <figure>
+                                    <img src="/image/icon/feature1.png" alt="img">
+                                </figure>
+                                <h4>CUSTOMIZED SOLUTIONS</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                            </div>
+                        </div>
+                        <div class="header-card">
+                            <div>
+                                <figure>
+                                    <img src="/image/icon/feature2.png" alt="img">
+                                </figure>
+                                <h4>Digital Marketing</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                            </div>
+                        </div>
+                        <div class="header-card">
+                            <div>
+                                <figure>
+                                    <img src="/image/icon/feature3.png" alt="img">
+                                </figure>
+                                <h4>CREATIVE SOLUTION</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                            </div>
+                        </div>
+                        <div class="header-card">
+                            <div>
+                                <figure>
+                                    <img src="/image/icon/feature4.png" alt="img">
+                                </figure>
+                                <h4>EXPERT TEAM</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <!-- ====== End of 1.3. card section ====== -->
+            <!-- ====== 1.4. logoipsum section ====== --> 
+             <section class="logoipsum">
+                <div class="container">
+                    <div class="flex flex-col gap-2">
+                        <hr class="hr1">
+                        <h3 class="mb-15">OUR CLIENTS</h3>
+                    </div>
+                    <div class="logoipsum-slider sliderlogo">
+                        <figure><img src="/image/home/logoipsum1.svg" alt="logoipsum"></figure>
+                        <figure><img src="/image/home/logoipsum2.svg" alt="logoipsum"></figure>
+                        <figure><img src="/image/home/logoipsum3.svg" alt="logoipsum"></figure>
+                        <figure><img src="/image/home/logoipsum4.svg" alt="logoipsum"></figure>
+                        <figure><img src="/image/home/logoipsum5.svg" alt="logoipsum"></figure>
+                        <figure><img src="/image/home/logoipsum6.svg" alt="logoipsum"></figure>
+                </div>
+                    <hr class="hr2">
+                    </div>
+             </section>
+            <!-- ====== End of 1.4. logoipsum section ====== -->
+            <!-- ====== 1.5. About us section ====== -->
+
+            <section class="about">
+                <div class="container">
+                    <div class="about-data flex-sb">
+                        <div class="w-50">
+                            <div class="flex about-title gap-1">
+                                <hr>
+                                <h5>ABOUT US</h5>
+                            </div>
+                            <h2>Explore Our Services And Boost Your Online Presence
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            </p>
+                            <div class="flex gap-1 mt-15">
+                                <i class="fa-solid fa-check"></i>
+                                <h5>Lorem Ipsum is simply dummy text of the printing.
+                                </h5>
+                            </div>
+                            <div class="flex gap-1 mt-15">
+                                <i class="fa-solid fa-check"></i>
+                                <h5>Lorem Ipsum is simply dummy text of the printing.</h5>
+                            </div>
+                            <div class="flex gap-2 mt-30">
+                                <a href="services.html" class="btn_hover1">Get Started</a>
+                                <a href="about.html" class="btn_hover2">Discover More</a>
+                            </div>
+                        </div>
+                        <div class="w-50 about-imgs flex flex-center">
+                            <div>
+                                <figure>
+                                    <img src="./image/home/about.png" alt="img">
+                                </figure>
+                            </div>
+                            <div class="ab-count flex flex-center">
+                                <div class="flex flex-center">
+                                    <h2>4</h2>
+                                    <h2>+</h2>
+                                </div>
+                                <p>year of experience</p>
+                            </div>
+                            <div class="about-hr flex gap-1">
+                                <hr>
+                                <h6>who we are</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====== End of 1.5. About us section ====== -->
+            <!-- ====== 1.6. gallary section ====== -->
+            <section class="portfolio">
+                <div class="portfolio-1">
+                    <div class="container">
+                        <div class="porto-center">
+                            <div class="w-50">
+                                <div class="flex gap-1">
+                                    <hr class="gallary-hr1">
+                                    <h5 >PORTFOLIO</h5>
+                                </div>
+                                <h2>Our Latest Projects.</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+                                </p>
+                            </div>
+                            <div class="flex flex-end w-100">
+                                <a href="portfolio.html" class="btn_hover2">View All Projects</a>
+                            </div>
+                            <hr class="mt-3">
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+            </section>
+        </div>
+    
+
+
+
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
