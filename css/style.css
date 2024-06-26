@@ -244,7 +244,7 @@ a {
 
 /* 1.1 Header Section */
 .header-index{
-    background-image: url('/image/bg/hero_bg.png');
+    background-image: url('../image/bg/hero_bg.png');
     background-position: center;
     background-size: cover;
 }
@@ -680,7 +680,7 @@ aside .pages{
 /* ====== 1.2. hero section ====== */
 
 .hero{
-    background-image: url("/image/bg/hero.png");
+    background-image: url("../image/bg/hero.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
